@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang='en' data-version='1568583952915'>
+<html lang='en' data-version='1569848068512'>
 
 <head>
 
@@ -32,6 +32,7 @@
 	<link rel='canonical' href='' />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 	<!-- smoosh -->
+    <link rel="stylesheet" href="./assets/scripts/css-loader.css" />
 	<link rel='stylesheet' href='bundle.css' />
 	<!-- endsmoosh -->
 
@@ -224,7 +225,9 @@
 	
 
 	<main id='content'>
-        <!--<div class="spotlight-container"></div>-->
+        <!-- Loader -->
+        <div class="loader loader-default"></div>
+
         <div class="citeCard"></div>
 		<div class='intro'>
 			<h1 class='intro__hed'>Gossamer Network</h1>
@@ -282,7 +285,7 @@
                                     <p>The U.S. Post was <b>expansive</b> and <b>fast-moving</b>. Between 1848 and 1895 the federal government established roughly 24,000 western post offices. It was able to rapidly occupy some of the region’s least accessible areas, from the <span class=highlight id=spotlightChihuahuan>Chihuahuan Desert</span> to the <span class=highlight id=spotlightCBasin>Central Basin</span> to the <span class=highlight id=spotlightNRockies>Northern Rockies</span>.</p>
                                 </div>
                                 <div class='step' data-index='intro-3'>
-                                    <p>The U.S. Post’s ability to rapidly expand into remote places helped settlers colonize the West while staying connected to the rest of the country. They used the mail to exchange letters with friends and family, subscribe to newspapers and magazines, or conduct long-distance financial transactions. The real power of the western postal network, however, came from its geography: the U.S. Post operated in more places - by far - than any other government institution. <br/>To see the spatial coverage of the <span class=highlightExisting id=introPost>U.S. Post</span>, try comparing it to other federal organizations in the West in the year 1877:<br/>Military<br/>Judiciary<br/>Department of the Interior<br/>Treasury Department</p>
+                                    <p>The U.S. Post’s ability to rapidly expand into remote places helped settlers colonize the West while staying connected to the rest of the country. They used the mail to exchange letters with friends and family, subscribe to newspapers and magazines, or conduct long-distance financial transactions. The real power of the western postal network, however, came from its geography: the U.S. Post operated in more places - by far - than any other government institution. <br/>To see the spatial coverage of the U.S. Post, try comparing it to other federal organizations in the West in the year 1877:<br/><button class=department id=introPost>U.S. Post</button><br/><button class=department id=btn_Military>Military</button><br/><button class=department id=btn_Judiciary>Judiciary</button><br/><button class=department id=btn_Interior>Department of the Interior</button><br/><button class=department id=btn_Treasury>Treasury Department</button></p>
                                 </div>
                                 <div class='step' data-index='intro-4'>
                                     <p>Even more surprisingly, the western postal infrastructure was <b>highly unstable</b>. Between 1848 and 1895, <span class=highlight id=spotlightIntroDisc>thousands of post offices either shut down or changed names/locations</span>. Some of these offices operated for just a few years or even months before closing down. These discontinued post offices are shown as empty red circles on the map: <span class=colorDistinguished>◯</span>. <br/>The U.S. Post operated a <b>gossamer network</b>, rapidly spinning out new tendrils that were capable of melting away at a moment’s notice.</p>
@@ -332,7 +335,7 @@
                                     <p>The presence of native peoples didn’t stop Americans from traveling across the West. During the 1850s tens of thousands of people traversed across several major trails, including the <span class=highlightTrail id=OregonTrail>Oregon</span>, <span class=highlightTrail id=CalTrail>California</span>, and <span class=highlightTrail id=MormonTrail>Mormon</span> trails to the north and the <span class=highlightTrail id=SantaFeTrail>Santa Fe</span> and <span class=highlightTrail id=ButterfieldTrail>Butterfield</span> trails to the south. Although a handful of post offices opened up at stage stops along these routes, most of the interior remained a place for Anglo-Americans to pass through rather than permanently settle. Outside of <span class=highlight id=MormonUtah>Mormon settlements in Utah Territory</span>, a scattering of <span class=highlight id=RioGrande>new offices in the Rio Grande Valley</span>, and a few isolated military forts, native power largely stymied postal growth through the end of the decade.</p>
                                 </div>
                                 <div class='step' data-index='edges-5'>
-                                    <p>Even in areas where the U.S. Government did manage to establish legal title over native land, its on-the-ground presence remained tenuous. In the Pacific Northwest, the government extracted <span class=highlightNative id=edgesAll>territorial concessions from a range of different tribes</span> during the 1850s. But its authority over this territory was unequal. It was only able to establish post offices near the coast, on land taken from the <span class=highlightNative id=UmpquaKal>Umpqua and Kalapuya</span>, the <span class=highlightNative id=ChastaSco>Chasta, Scoton, and Grave Creek</span>, <span class=highlightNative id=Kalapuya>Kalapuya</span>, the <span class=highlightNative id=NisquallyPuy>Nisqually, Puyallup, Steilacoom, Squaxin, S'Homamish, Stehchass, T'Peeksin, Squiaitl, and Sahehwamish</span>, the <span class=highlightNative id=QuinaultQui>Quinault and Quileute</span>, the <span class=highlightNative id=Klallam>Klallam</span>, and <span class=highlightNative id=DuwamishSuq>Duwamish and Suquamish</span>. In the more rugged interior, Anglo-Americans failed to form permanent settlements and the U.S. Government failed to establish a civilian infrastructure, despite seizing land from the <span class=highlightNative id=Yakama>Yakama</span>, the <span class=highlightNative id=ConfederatedTribes>Confederated Tribes of Middle Oregon</span>, the <span class=highlightNative id=WallaWal>Walla Walla, Cayuse, and Umatilla</span>, the <span class=highlightNative id=NezPerce>Nez Perce</span>, and the <span class=highlightNative id=FlathoodKoo>Flathood, Kootenai, Upper Pend d’Oreile</span>.</p>
+                                    <p>Even in areas where the U.S. Government did manage to establish legal title over native land, its on-the-ground presence remained tenuous. In the Pacific Northwest, the government extracted <span class=highlightNative id=edgesAll>territorial concessions from a range of different tribes</span> during the 1850s. But its authority over this territory was unequal. It was only able to establish post offices near the coast, on land taken from the <span class=highlightNative id=UmpquaKal>Umpqua and Kalapuya, the Chasta, Scoton, and Grave Creek, Kalapuya, the Nisqually, Puyallup, Steilacoom, Squaxin, S'Homamish, Stehchass, T'Peeksin, Squiaitl, and Sahehwamish, the Quinault and Quileute, the Klallam, and Duwamish and Suquamish</span>. In the more rugged interior, Anglo-Americans failed to form permanent settlements and the U.S. Government failed to establish a civilian infrastructure, despite seizing land from the <span class=highlightNative id=Yakama>Yakama, the Confederated Tribes of Middle Oregon, the Walla Walla, Cayuse, and Umatilla, the Nez Perce, and the Flathood, Kootenai, Upper Pend d’Oreile</span>.</p>
                                 </div>
                                 <div class='step' data-index='edges-6'>
                                     <p>Postal growth was strongest on the western edge of the West, up and down the Pacific Coast. Spurred by new gold discoveries in on both sides of the California/Oregon border, <span class=highlight id=newOffices>new post offices filled in the corridor between Oregon’s Willamette Valley and northern California</span>. By the end of the 1850s, postal expansion in Washington Territory and southern California had extended a continuous, albeit uneven archipelago of post offices stretching from <span class=highlight id=PugetSound>Puget Sound</span> to  <span class=highlight id=SanDiego>San Diego</span>. <br/><br/>Even as the federal government solidified its foothold on the Pacific Coast, it was approaching a crisis point in the eastern United States. By the end of the 1850s the slavery issue had fractured the nation along sectional lines, as Northerners spoke darkly of a “slave power” and Southerners began openly debating secession. When Americans filed to the polls in 1860 to cast their votes for President, the very future of the country - not just the West - was in question.</p>
@@ -475,8 +478,9 @@
                                 <div class='step' data-index='integration-6'>
                                     <p>The colonization and integration of the western United States represented one of the most dramatic transformations of people, land, and resources in American history. Different processes drove these changes - warfare and dispossession, ______ and industrialization - but underlying them all was the quiet infrastructure of the U.S. Post. The federal government’s ability to rapidly extend its postal network into otherwise remote places provided American colonizers with vital lines of communication to the wider world. It didn’t have to be this way. The U.S. Post could have expanded more slowly, more cautiously, and with more limited coverage. Western expansion still would have taken place, but its pace would have been slower, its prosecution more difficult, and its reach more limited. Instead, the U.S. Post’s expansive gossamer network helped to accelerate the transition from <button class=btn-compare id=integration-native>native territory</button> into a <button class=btn-compare id=integration-colonized>colonized American region</button>.</p>
                                 </div>
-                                <div class='step' data-index='integration-7'>
-                                    <p>To learn more about this story: Cameron Blevins, Gossamer Network: The U.S. Post and State Power in the American West (buy now)</p>
+                            
+                                <div class='step' data-index='about-0'>
+                                    <p><div class=chapterEnding id=about><p></p><h3>About</h3><p>To learn more about this story: Cameron Blevins, Gossamer Network: The U.S. Post and State Power in the American West (buy now)</p></div></p>
                                 </div>
             	</article>
             
@@ -485,7 +489,7 @@
 	</main>
 
 	<script src='assets/scripts/d3.v4.12.0+jetpack.min.js'></script>
-	<script src='bundle.js?version=1568583952915' async></script>
+	<script src='bundle.js?version=1569848068512' async></script>
 </body>
 
 </html>
