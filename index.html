@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang='en' data-version='1570386590631'>
+<html lang='en' data-version='1570994413635'>
 
 <head>
 
@@ -82,7 +82,7 @@
 		}
 	
 	</style>
-    <link href="https://fonts.googleapis.com/css?family=Anton|Cormorant|Merriweather|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cormorant+SC:400,700|Merriweather|Playfair+Display&display=swap" rel="stylesheet">
 	<!-- smoosh -->
 	<script src='critical.js'></script>
 	<!-- endsmoosh -->
@@ -199,7 +199,7 @@
 		<div class='header__menu tk-atlas'>
 			<p class='menu__tagline'>CONTENT</p>
 			<ul class='menu__links'>
-				<li><a href='#content' >INTRODUCTION</a></li>
+				<li><a href='#intro' >INTRODUCTION</a></li>
 				<li><a href='#forays' >1848-1853: FORAYS</a></li>
 				<li><a href='#edges' >1854-1859: EDGES</a></li>
 				<li><a href='#artilleryShells'>1860-1865: ARTILLERY SHELLS</a></li>
@@ -221,7 +221,22 @@
 			<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg><sup>TABLE OF CONTENT</sup></span>
 			<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
 		</btn>
+	    <div class="header_chapter_index">
+	        <div class="header_chapter_container">
+	            Chapter
+	            <a href="#intro" class="chapterIndicator" id="intro-idt">01</a>
+	            <a href="#forays" class="chapterIndicator" id="forays-idt">02</a>
+	            <a href="#edges" class="chapterIndicator" id="edges-idt">03</a>
+	            <a href="#artilleryShells" class="chapterIndicator" id="artilleryShells-idt">04</a>
+	            <a href="#corridors" class="chapterIndicator" id="corridors-idt">05</a>
+	            <a href="#colonization" class="chapterIndicator" id="colonization-idt">06</a>
+	            <a href="#churn" class="chapterIndicator" id="churn-idt">07</a>
+	            <a href="#divergence" class="chapterIndicator" id="divergence-idt">08</a>
+	            <a href="#integration" class="chapterIndicator" id="integration-idt">09</a>
+	        </div>
+	    </div>
 	</header>
+	
 	
 
 	<main id='content'>
@@ -229,7 +244,7 @@
         <div class="loader loader-default"></div>
 
         <div class="citeCard"></div>
-		<div class='intro'>
+		<div class='intro' id="intro">
 			<h1 class='intro__hed'>Gossamer Network</h1>
 			<p class='intro__dek'>In 1848, the vast majority of what would become the western United States was controlled by native people. Less than half a century later, the region had been occupied by millions of American settlers. How did this happen so quickly, in the span of a single generation? The answer lies with an unlikely source: the U.S. Post. During the nineteenth century the federal government established more than 25,000 post offices in the western United States, building a vast communications infrastructure that helped knit together an otherwise remote region. This website maps the spread of that network between 1848 to 1895.<sup class=reference><a href=”#”></a></sup></p>
 			<p class='intro__byline'>By
@@ -288,20 +303,20 @@
                                     <p>The U.S. Post’s ability to rapidly expand into remote places helped settlers colonize the West while staying connected to the rest of the country. They used the mail to exchange letters with friends and family, subscribe to newspapers and magazines, or conduct long-distance financial transactions. The real power of the western postal network, however, came from its geography: the U.S. Post operated in more places - by far - than any other government institution. <br/>To see the spatial coverage of the U.S. Post, try comparing it to other federal organizations in the West in the year 1877:<br/><button class=department id=introPost>U.S. Post</button><br/><button class=department id=btn_Military>Military</button><br/><button class=department id=btn_Judiciary>Judiciary</button><br/><button class=department id=btn_Interior>Department of the Interior</button><br/><button class=department id=btn_Treasury>Treasury Department</button></p>
                                 </div>
                                 <div class='step' data-index='intro-4'>
-                                    <p>Even more surprisingly, the western postal infrastructure was <b>highly unstable</b>. Between 1848 and 1895, <span class=highlight id=spotlightIntroDisc>thousands of post offices either shut down or changed names/locations</span>. Some of these offices operated for just a few years or even months before closing down. These discontinued post offices are shown as empty red circles on the map: <span class=colorDistinguished>◯</span>. <br/>The U.S. Post operated a <b>gossamer network</b>, rapidly spinning out new tendrils that were capable of melting away at a moment’s notice.</p>
+                                    <p>Even more surprisingly, the western postal infrastructure was <b>highly unstable</b>. Between 1848 and 1895, thousands of post offices either shut down or changed names/locations. Some of these offices operated for just a few years or even months before closing down. These <span class=highlightDiscontinued id=spotlightIntroDisc>discontinued post offices</span> are shown as empty red circles on the map: <span class=colorDistinguished>◯</span>. <br/>The U.S. Post operated a <b>gossamer network</b>, rapidly spinning out new tendrils that were capable of melting away at a moment’s notice.</p>
                                 </div>
                                 <div class='step' data-index='intro-5'>
                                     <p>In most places, the U.S. Post did not own or operate its own infrastructure. Instead, it paid <span class=highlight id=introMerchants>local merchants</span> to distribute letters from their stores or contracted with stagecoach companies to <span class=highlight id=introPassengers>carry bags of mail alongside their passengers</span>. These temporary and part-time arrangements explain how the U.S. Post was able to expand so quickly, into so many different places - and why its network was so unstable. The federal government grafted its mail service onto an existing private infrastructure, creating a sprawling, decentralized system whose operations were tied to the fortunes of local businesses and communities.</p>
                                 </div>
                                 <div class='step' data-index='intro-6'>
-                                    <p>Historical data comes with limitations, and this project is no different. Its first limitation is <b>imprecise data</b>. The <a href=https://www.arcgis.com/apps/webappviewer/index.html?id=eb6ca76e008543a89349ff2517db47e6 target=_blank>Invasion of America</a> project generously provided data about native land cessions mapped from federal treaties, executive orders, and government maps. These documents were intentionally vague, making it difficult to precisely delineate between unceded native land, government reservations, and colonized territory. To take one example: a treaty in 1855 established a common hunting ground for the Blackfoot, Salish and Kootenai (Flathead), and Nez Perce. Although classified as a “reservation” on this map, <span class=highlight id=introReservation>its borders didn’t mean much</span>: by the 1870s thousands of settlers and goldseekers had occupied this area. The second limitation is <b>missing data</b>. Thousands of post offices from Richard Helbock’s dataset - roughly one out of every three - could not be located and therefore do not show up on the maps.</p>
+                                    <p>Historical data comes with limitations, and this project is no different. Its first limitation is <b>imprecise data</b>. The <a href=http://invasionofamerica.ehistory.org target=_blank>Invasion of America</a> project generously provided data about native land cessions mapped from federal treaties, executive orders, and government maps. These documents were intentionally vague, making it difficult to precisely delineate between unceded native land, government reservations, and colonized territory. To take one example: a treaty in 1855 established a common hunting ground for the Blackfoot, Salish and Kootenai (Flathead), and Nez Perce. Although classified as a “reservation” on this map, <span class=highlightNative id=introReservation>its borders didn’t mean much</span>: by the 1870s thousands of settlers and goldseekers had occupied this area. The second limitation is <b>missing data</b>. Thousands of post offices from Richard Helbock’s dataset - roughly one out of every three - could not be located and therefore do not show up on the maps.</p>
                                 </div>
                                 <div class='step' data-index='intro-7'>
                                     <p>The U.S. Post and its gossamer network provided the underlying spatial circuitry of settler colonial occupation in the West. The following narrative maps where and how this network expanded. It begins with the United States laying claim to new western territory in <span class=highlight id=intro1848>1848</span> and ends in <span class=highlight id=intro1895>1895</span> with the region’s effective integration into the nation. <br/>The narrative is broken into eight chapters, each of which covers a different six-year chunk and summarizes some of the major patterns from that period. You can read these sequentially or use the <span class=highlight id=tableOfContents>Table of Contents</span> to jump to specific different chapters. Together, they reveal the hidden channel through which the American state consolidated its hold over the western United States.</p>
                                 </div>
                             
                                 <div class='step' data-index='forays-0'>
-                                    <p><div class=chapterEnding id=forays><p></p><h3>1848-1853: FORAYS</h3><p>Gold and conquest. This is the typical story of the year 1848. In January, James Marshall discovered gold outside of Sacramento, California. Eight days after Marshall’s discovery, the United States seized roughly half a million square miles of territory from Mexico in exchange for ending the American invasion and occupation of its southern neighbor. Parts of this land would later become the states of Arizona, Colorado, Nevada, New Mexico, Utah, Wyoming, and, finally, California and its newfound gold. </p></div></p>
+                                    <p><div class=chapterEnding id=forays><p></p><h3>1848-1853: FORAYS</h3><p>Gold and conquest. This is the typical story of the year 1848. In January, James Marshall discovered gold outside of Sacramento, California. Nine days after Marshall’s discovery, the United States seized roughly half a million square miles of territory from Mexico in exchange for ending the American invasion and occupation of its southern neighbor. Parts of this land would later become the states of Arizona, Colorado, Nevada, New Mexico, Utah, Wyoming, and, finally, California and its newfound gold. </p></div></p>
                                 </div>
                                 <div class='step' data-index='forays-1'>
                                     <p>The discovery of gold and the Treaty of Guadalupe Hidalgo touched off a global stampede to the American West, unleashing a wave of new settlement into freshly conquered territory. That, at least, is how the story goes. In reality, the overwhelming majority of the West was not yet controlled by the United States. It was <span class=NativeLandBG>native land</span>. Thousands of different groups occupied the region, from <span class=highlightNative id=ForaysApaches>Apache</span> in the Southwest to <span class=highlightNative id=UtesCo>Utes in the Colorado Plateau</span> to <span class=highlightNative id=Blackfoot>Blackfoot</span> on the northern plains. Native power effectively blocked Anglo-American expansion in the West. Between 1848-1853, <span class=highlight id=limitedForays>the U.S. Post made only limited forays into the region</span>.</p>
@@ -420,7 +435,7 @@
                                     <p>"Boom-and-bust" is a sequential model: first the bender, then the hangover. But a closer look at the western postal network during 1878-1883 shows a different sort of pattern. Postal growth and postal failure were simultaneous, not sequential. Instead of a distinctive “boom” phase followed by a “bust” phase, both post office openings and post office closings rocketed upwards during 1878-1883. It was not boom <i>then</i> bust; it was boom <i>with</i> bust. In a word: <b>churn</b>.  <br/><button class=btn-compare id=churn-established>Established Post Offices</button> <button class=btn-compare id=churn-discontinued> Discontinued Post Offices</button></p>
                                 </div>
                                 <div class='step' data-index='churn-3'>
-                                    <p>On the central and southern plains, aspiring homesteaders and a “ranch rush” of cattle and sheep moved into drier and drier environments. The U.S. Post moved with them, <span class=highlight id=churn_Texas>continuing to thicken its network in central Texas and western Kansas</span>. As aridity increased, so did instability. Much of this expansion followed a “churn” model of growth, as more than one thousand post offices in these two <span class=highlightDiscontinued id=churn_period>states either shut down or changed names or locations during this six-year period</span>. Unstable as it may have been, this expansionary infrastructure provided settlers with a vital public service - one that continued to wither away at the borders of Indian Territory.</p>
+                                    <p>On the central and southern plains, aspiring homesteaders and a “ranch rush” of cattle and sheep moved into drier and drier environments. The U.S. Post moved with them, <span class=highlight id=churn_Texas>continuing to thicken its network in central Texas and western Kansas</span>. As aridity increased, so did instability. Much of this expansion followed a “churn” model of growth, as more than one thousand post offices in these two states <span class=highlightDiscontinued id=churn_period> either shut down or changed names or locations during this six-year period</span>. Unstable as it may have been, this expansionary infrastructure provided settlers with a vital public service - one that continued to wither away at the borders of Indian Territory.</p>
                                 </div>
                                 <div class='step' data-index='churn-4'>
                                     <p>To the north, the late 1870s kicked off a frenzied rush of settlers across the northern plains known as the “Great Dakota Boom.” The territory’s postal network underwent its own boom during these years, as the number of post offices in Dakota  <span class=highlight id=churn_Dakota>more than tripled between 1878-1883</span>. Railroads  <span class=highlight id=churn_NPacific>like the Northern Pacific</span> fueled some of this growth. So, too, did native dispossession. In 1879, President Rutherford Hayes issued an executive order opening up  <span class=highlightNative id=churn_Lakota>land that had been reserved for the Lakota Sioux</span>. The following year, officials forced additional cessions from the  <span class=highlightNative id=churn_Arikara>Arikara, Gros Ventre, and Mandan</span>. In both cases,  the U.S. Post's expansionary gossamer network rapidly occupied this plundered territory.</p>
@@ -480,7 +495,7 @@
                                 </div>
                             
                                 <div class='step' data-index='about-0'>
-                                    <p><div class=chapterEnding id=about><p></p><h3>About</h3><p>To learn more about this story: Cameron Blevins, Gossamer Network: The U.S. Post and State Power in the American West (buy now)</p></div></p>
+                                    <p><div class=chapterEnding id=about><h3>About</h3><p>To learn more about this story: Cameron Blevins, Gossamer Network: The U.S. Post and State Power in the American West (buy now).</p></div></p>
                                 </div>
             	</article>
             
@@ -489,7 +504,7 @@
 	</main>
 
 	<script src='assets/scripts/d3.v4.12.0+jetpack.min.js'></script>
-	<script src='bundle.js?version=1570386590631' async></script>
+	<script src='bundle.js?version=1570994413635' async></script>
 </body>
 
 </html>
